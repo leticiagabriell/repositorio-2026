@@ -1,0 +1,6 @@
+aluno=str(input("Digite seu nome:"))
+periodo=int(input("digite em que periodo voce esta:"))
+ira =float(input("Digite seu IR") )
+print(type(aluno))
+print(type(periodo))
+print(type(ira))
