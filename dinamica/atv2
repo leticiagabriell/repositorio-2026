@@ -1,0 +1,4 @@
+nome = input("digite seu nome:"))
+if len(nome)>5 :
+  print("seu nome é grande")
+
