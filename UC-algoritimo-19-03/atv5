@@ -1,0 +1,20 @@
+def verificar_acesso():
+    for tentativa in range(3, 0, -1):
+        usuario = input("Digite seu usuário: ")
+        try:
+            senha = int(input("Digite sua senha: "))
+        except ValueError:
+            print("Erro: A senha deve conter apenas números!")
+            continue 
+
+        if usuario == "adimin" and senha == 123456:
+            print(f"Olá, {usuario}. Acesso liberado!")
+            return
+        
+        else:
+            if tentativa > 1:
+                print(f"Dados incorretos! Restam {tentativa - 1} tentativa(s).\n")
+            else:
+                print("Acesso bloqueado! Procure o gerente.")
+
+verificar_acesso()
