@@ -1,0 +1,12 @@
+def lancar_foguete(combustivel, clima, sistema_ok):
+    if combustivel >= 100 and clima == "bom" and sistema_ok == True:
+        print("Lançamento autorizado")
+    else:
+        if combustivel < 100:
+            print("Combustível insuficiente")
+        if clima != "bom":
+            print("Clima desfavorável")
+        if not sistema_ok:
+            print("Falha no sistema")
+
+lancar_foguete(100, "bom", True)
