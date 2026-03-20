@@ -1,0 +1,20 @@
+def calcular_pontuacao(pontos, tempo):
+    if tempo < 30:
+        return pontos + 50
+    elif tempo > 100:
+        return pontos - 20
+    else:
+        return pontos
+
+
+p = float(input("Digite sua pontuação: "))
+t = float(input("Digite seu tempo: "))
+
+
+final = calcular_pontuacao(p, t)
+
+
+print("Sua pontuação final:", final)
+
+if final > 200:
+    print("RECORDE!")
